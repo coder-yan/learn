@@ -9,7 +9,7 @@
 # 切片
 nil切片和空切片的区别
 
-```code golang
+```go
 fn hello() {
     fmt.Println("hello")
 }
