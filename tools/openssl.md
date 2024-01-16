@@ -1,3 +1,9 @@
+# 基本概念
+证书持有人都有一对公钥和私钥，这两把密钥可以互为加解密
+
+数字证书就是经过CA认证过的公钥，因此数字证书和公钥一样是公开的
+
+
 # 探测支持的算法
 openssl s_client -tls1_2 -cipher AES128-SHA -connect 127.0.0.1:21768
 openssl s_client -tls1_2 -cipher AES256-SHA -connect 127.0.0.1:21768
