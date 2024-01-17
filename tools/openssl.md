@@ -32,6 +32,7 @@ nmap --script ssl-cert,ssl-enum-ciphers -p 31768,21768 127.0.0.1
 查看上述公私钥信息
 - openssl pkey -in private_key.pem -text
 - openssl rsa -in public_key.pem -pubin -text -noout
+
   查看公钥的秘钥长度
 - openssl rsa -pubin -inform PEM -text -noout -in public_key.pem
 - 
