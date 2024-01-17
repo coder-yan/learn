@@ -24,7 +24,15 @@ nmap --script ssl-cert,ssl-enum-ciphers -p 31768,21768 127.0.0.1
 - openssl genpkey -algorithm RSA -out private_key.pem
 - openssl rsa -in private_key.pem -pubout -out public_key.pem
 
+生成1024为RSA公私钥对
+- openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:1024
+
+- openssl rsa -in private_key.pem -pubout -out public_key.pem
+
 查看上述公私钥信息
 - openssl pkey -in private_key.pem -text
 - openssl rsa -in public_key.pem -pubin -text -noout
+  查看公钥的秘钥长度
+- openssl rsa -pubin -inform PEM -text -noout -in public_key.pem
+- 
 
