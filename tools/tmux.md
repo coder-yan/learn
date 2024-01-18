@@ -15,7 +15,7 @@ ctr-b ,
 切换pannel
 ctr-b h/j/k/l
 切换window窗口
-ctr-b shift-h/l
+ctr-b ctr-h/l
 退出tmux模式（tmux没有退出）
 ctr-b d
 ```
