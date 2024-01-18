@@ -29,6 +29,11 @@ nmap --script ssl-cert,ssl-enum-ciphers -p 31768,21768 127.0.0.1
 openssl genpkey -algorithm RSA -out private_key.pem
 openssl rsa -in private_key.pem -pubout -out public_key.pem
 
+生成https服务器使用的证书
+openssl ecparam -name prime256v1 -genkey -noout -out server.key
+openssl req -new -key server.key -out server.csr
+openssl req -x509 -sha256 -days 365 -key server.key -in server.csr -out server.crt
+
 生成1024为RSA公私钥对
 openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:1024
 openssl rsa -in private_key.pem -pubout -out public_key.pem
