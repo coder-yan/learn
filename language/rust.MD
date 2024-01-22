@@ -30,6 +30,15 @@ cargo update
 ```
 
 # 基础语法
+## 基础
+```rust
+let t = true;
+let num = 12;
+// let if
+let cont = true;
+// 代码块的值是其最后一个表达式的值，而数字本身就是一个表达式
+let cont_value = if cont { 5 } else { 6 };
+```
 ## print
 在print宏中就可以使用{:?}来打印结构
 {:#?} 格式化的显示数据接口
