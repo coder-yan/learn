@@ -10,7 +10,8 @@ b = a.replace("2023", "2024")  // "2024-01-01"
 
 
 ## 异常
-try...except...
+try...except...  
+
 没有异常执行else
 try...except...else
 有没有异常都会执行finally
