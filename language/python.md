@@ -2,9 +2,12 @@
 ## python内置函数（69个）
 
 ## 字符串
+```python
 src = r"D:\work\global.log"
 a = "2023-01-01"
 b = a.replace("2023", "2024")  // "2024-01-01"
+```
+
 
 ## 异常
 try...except...
