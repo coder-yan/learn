@@ -6,6 +6,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 rustc --version
 更新rust
 rustup update
+rustup doc
 卸载
 rustup self uninstall
 ```
