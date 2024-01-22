@@ -40,8 +40,11 @@ os.rename(src,dst)
 
 os.remove() //删除文件
 os.rmdir() // 删除空文件夹
+```
+
 
 ### shutil
+```python
 文件的复制
 shutil.copy(file-name, dir-name) // dir-name如果是文件名，复制后重新命名
 文件夹的复制
