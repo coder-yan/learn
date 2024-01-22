@@ -29,6 +29,14 @@ cargo update
 ```
 
 # 基础语法
+## print
+在print宏中就可以使用{:?}来打印结构
+{:#?} 格式化的显示数据接口
+
+## unused代码
+```
+#![allow(unused)] 可以消除没有调用的函数产生的告警。
+```
 ## if...let
 if let 主要解释减少枚举的冗余，只关系想要的类型
 ```rust
@@ -40,6 +48,21 @@ if let Some(max) = data {
     // ....
 }
 ```
+
+## option
+定义一个option::None的时候，需要主要指定泛型类型
+
+## Result
+1. Result是一个enum： Ok和Err
+2. Result的实力有except方法
+
+## 注解
+### Debug注解
+```
+结构上加上#[derive(Debug)]注解，在print宏中就可以使用{:?}来打印结构
+{:#?} 格式化的显示数据接口
+```
+
 
 ## 易混淆的概念
 1. self和Self
