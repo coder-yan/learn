@@ -78,7 +78,8 @@ glob.glob("file[2]")
 # 三方库
 ## pandas
 ### pandas常用数据结构
-#### Series和DataFrame
+#### Series
+#### Series创建
 Series是创建一个一维的结构，索引+值
 
 
@@ -121,8 +122,10 @@ dtype: int64
 ```
   </pre>
   </details>
+#### Series属性
 
-
+### DataFrame
+#### DataFrame创建
 DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
   <summary>DataFrame用法举例</summary>
@@ -164,6 +167,8 @@ Mysql    NaN  77.0
   ```
   </pre>
 </details>
+
+#### DataFrame属性
 
 # python Web框架
 
