@@ -80,6 +80,11 @@ glob.glob("file[2]")
 ### pandas常用数据结构
 #### Series和DataFrame
 Series是创建一个一维的结构，索引+值
+
+
+<details>
+  <summary>Series用法</summary>
+  <pre>
 ```python
 >>> s1 = pd.Series(22)
 >>> print(s1)
@@ -114,6 +119,10 @@ b    33
 c    44
 dtype: int64
 ```
+  </pre>
+  </details>
+
+
 DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
   <summary>点击时的区域标题</summary>
