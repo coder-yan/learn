@@ -205,6 +205,50 @@ Mysql    NaN  77.0
 </details>
 
 #### DataFrame属性
+```python
+ndim 返回DataFrame的维数，始终返回1
+shape 返回DataFrame的行数
+size  返回DataFrame的元素个数
+dtype 返回DataFrames每一列元素的数据类型
+index 返回DataFrame的行索引
+columns 返回DataFrame的列索引
+values 返回DataFrame的数值
+```
+#### DataFrame属性举例
+<details>
+  <sumary>DataFrame属性用法举例</sumary>
+  <pre>
+    ```python
+    >>> x = {"张三":{"MySql":90, "python":80}, "李四":{"Mysql":77, "python":99}}
+    >>> d1 = pd.DataFrame(x)
+    >>> print(d1)
+              张三    李四
+    MySql   90.0   NaN
+    python  80.0  99.0
+    Mysql    NaN  77.0
+    >>> d1.ndim
+    2
+    >>> d1.shape
+    (3, 2)
+    >>> d1.size
+    6
+    >>> d1.dtypes
+    张三    float64
+    李四    float64
+    dtype: object
+    >>> list(d1.index)
+    ['MySql', 'python', 'Mysql']
+    >>> list(d1.columns)
+    ['张三', '李四']
+    >>> d1.values
+    array([[90., nan],
+           [80., 99.],
+           [nan, 77.]])
+    >>>
+    ```
+  </pre>
+</details>
+
 
 # python Web框架
 
