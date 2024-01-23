@@ -127,17 +127,40 @@ DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
   <summary>点击时的区域标题</summary>
   <pre>
-  ```json
-   {
-    "name": "hexo-site",
-    "version": "0.0.0",
-    "private": true,
-    "scripts": {
-      "build": "hexo generate",
-      "clean": "hexo clean",
-      "deploy": "hexo deploy",
-      "server": "hexo server"
-   }
+  ```python
+>>> x = [[1,2,3],[4,5,6],[7,8,9]]
+>>> d1 = pd.DataFrame(x)
+>>> print(d1)
+   0  1  2
+0  1  2  3
+1  4  5  6
+2  7  8  9
+>>> d2 = pd.DataFrame(x, index=["aa", "bb", "cc"], columns=list("abc"))
+>>> print(d2)
+    a  b  c
+aa  1  2  3
+bb  4  5  6
+cc  7  8  9
+>>> x = {"name":["张三", "李四", "王五"], "age":[18,20,22], "sex":["男", "女", "男"]}
+>>> d1 = pd.DataFrame(x)
+>>> print(d1)
+  name  age sex
+0   张三   18   男
+1   李四   20   女
+2   王五   22   男
+>>> x = [{"one":1, "two":2, "three":3},{"one":4, "two":5, "three":6}]
+>>> d1 = pd.DataFrame(x)
+>>> print(d1)
+   one  two  three
+0    1    2      3
+1    4    5      6
+>>> x = {"张三":{"MySql":90, "python":80}, "李四":{"Mysql":77, "python":99}}
+>>> d1 = pd.DataFrame(x)
+>>> print(d1)
+          张三    李四
+MySql   90.0   NaN
+python  80.0  99.0
+Mysql    NaN  77.0
   ```
   </pre>
 </details>
