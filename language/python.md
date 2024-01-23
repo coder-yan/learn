@@ -117,6 +117,7 @@ dtype: int64
 DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
   <summary>点击时的区域标题</summary>
+  <pre>
   ```json
    {
     "name": "hexo-site",
@@ -129,6 +130,7 @@ DataFrame是创建一个二维的结构，有列索引和行索引
       "server": "hexo server"
    }
   ```
+  </pre>
 </details>
 
 
