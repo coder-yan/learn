@@ -83,7 +83,7 @@ Series是创建一个一维的结构，索引+值
 
 
 <details>
-  <summary>Series用法</summary>
+  <summary>Series用法举例 </summary>
   <pre>
 ```python
 >>> s1 = pd.Series(22)
@@ -125,7 +125,7 @@ dtype: int64
 
 DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
-  <summary>点击时的区域标题</summary>
+  <summary>DataFrame用法举例</summary>
   <pre>
   ```python
 >>> x = [[1,2,3],[4,5,6],[7,8,9]]
@@ -164,6 +164,12 @@ Mysql    NaN  77.0
   ```
   </pre>
 </details>
+
+# python Web框架
+
+# python 机器学
+
+# python websocket
 
 
 # 黑魔法
