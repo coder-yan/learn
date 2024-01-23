@@ -24,7 +24,7 @@ os.listdir(path)
 
 os.walk配合for遍历所有的子目录
 os.walk()
-for dirpath, dirname, filename in os.walk(path):
+for dirpaths, dirnames, filenames in os.walk(path):
   pass
 
 判断路径是否存在
