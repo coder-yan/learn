@@ -78,7 +78,7 @@ glob.glob("file[2]")
 # 三方库
 ## pandas
 ### pandas常用数据结构
-#### Series
+#### Series用法
 #### Series创建
 Series是创建一个一维的结构，索引+值
 
@@ -124,8 +124,43 @@ dtype: int64
   </details>
 
 #### Series属性
+```python
+ndim 返回Series的维数，始终返回1
+shape 返回Series的行数
+size  返回Series的元素个数
+dtype 返回Series的数据类型
+index 返回Series的索引
+values 返回Ser的数值
+```
 
-### DataFrame
+#### Series属性举例
+<details>
+  <sumary>Series属性举例</sumary>
+  <pre>
+    ```python
+      >>> x = [1,3,5]
+      >>> d1 = pd.Series(x)
+      >>> d1.ndim
+      1
+      >>> d1.shape
+      (3,)
+      >>> d1.size
+      3
+      >>> d1.dtypes
+      dtype('int64')
+      >>> list(d1.index)
+      [0, 1, 2]
+      >>> d1.values
+      array([1, 3, 5])
+      >>> d1.index
+      RangeIndex(start=0, stop=3, step=1)
+    ```
+  </pre>
+</details>
+
+
+
+### DataFrame用法
 #### DataFrame创建
 DataFrame是创建一个二维的结构，有列索引和行索引
 <details>
