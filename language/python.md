@@ -122,6 +122,7 @@ dtype: int64
 ```
   </pre>
   </details>
+
 #### Series属性
 
 ### DataFrame
