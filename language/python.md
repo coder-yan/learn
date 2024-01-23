@@ -134,27 +134,28 @@ values 返回Ser的数值
 ```
 
 #### Series属性举例
+
 <details>
   <sumary>Series属性举例</sumary>
   <pre>
     ```python
-      >>> x = [1,3,5]
-      >>> d1 = pd.Series(x)
-      >>> d1.ndim
-      1
-      >>> d1.shape
-      (3,)
-      >>> d1.size
-      3
-      >>> d1.dtypes
-      dtype('int64')
-      >>> list(d1.index)
-      [0, 1, 2]
-      >>> d1.values
-      array([1, 3, 5])
-      >>> d1.index
-      RangeIndex(start=0, stop=3, step=1)
-    ```
+    >>> x = [1,3,5]
+    >>> d1 = pd.Series(x)
+    >>> d1.ndim
+    1
+    >>> d1.shape
+    (3,)
+    >>> d1.size
+    3
+    >>> d1.dtypes
+    dtype('int64')
+    >>> list(d1.index)
+    [0, 1, 2]
+    >>> d1.values
+    array([1, 3, 5])
+    >>> d1.index
+    RangeIndex(start=0, stop=3, step=1)
+  ```
   </pre>
 </details>
 
