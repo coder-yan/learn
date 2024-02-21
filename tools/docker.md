@@ -5,6 +5,7 @@
 
 # docker-compose
 ## expose和ports的区别
+
 ```code
 expose：导出的端口仅仅用于处于同一个网络中的容器共享
 ports
