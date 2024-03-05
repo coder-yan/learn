@@ -8,4 +8,7 @@ nix-store --verify --check-content --repair  # 有时候nix-channel --update的�
 nix-channel --update
 nix-shell -p vim -p git
 
+nix-shell -I nixpkgs=https://mirrors.tuna.tsinghua.edu.cn/nixpkgs -p python39 --option binary-caches https://mirrors.tuna.tsinghua.edu.cn/nix-channels --option binary-cache-public-keys "tuna-nix-pubkey.drv.drv@tuna-nix-pubkey:1:9k0L5Lp5MwXxZoLs3iO3LJqF6w3u4ZsKl4cXzqJkQ1k="
+
+
 ```
