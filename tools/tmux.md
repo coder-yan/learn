@@ -30,3 +30,7 @@ ta work
 ```
 
 # tmux常见问题
+1. tmux在鼠标模式下，粘贴复制
+   shift+选中的内容
+   ctrl+insert 复制
+   shift+insert 粘贴
